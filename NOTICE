@@ -1,0 +1,12 @@
+This skill is derived from Apple's creator-studio-doc-format skill:
+
+https://github.com/apple/creator-studio-doc-format
+skills/creator-studio-doc-format/SKILL.md
+
+Copyright Apple Inc.
+Licensed under the Apache License, Version 2.0. See LICENSE.
+
+SKILL.md is modified for Allumni. The unmodified skill text is in SKILL.upstream.md.
+Changes: install creator-studio-doc-format from requirements.txt in the skill
+workspace, and save finished presentations under exports/*.keyx so Allumni can
+attach them to the chat.
