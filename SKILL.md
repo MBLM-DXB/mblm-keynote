@@ -70,9 +70,16 @@ rules. If the script raises, read the error, fix the script, and rerun it. Keep
 save, because removing it to force a save isn't a fix. Hand over only a document that has
 passed it.
 
-After a save, Allumni attaches `exports/<short-name>.keyx` to the chat. Tell the user
-that filename. They open it in Keynote. After an analysis, report what you found and
-do not save.
+After a save, read the tool result. If `outputs` contains the `.keyx`, share
+`outputs[].downloadUrl`. That link is the file, and the chat shows a download
+button. The user opens it in Keynote.
+
+If `outputs` is empty, the file was not attached. Fix the script and run it
+again so the `.keyx` is saved under `exports/`. Do not tell the user you cannot
+attach a `.keyx`. Do not paste a Terminal script. Do not produce a `.key`,
+`.pptx`, or any other format instead.
+
+After an analysis, report what you found and do not save.
 
 ## Design defaults
 
